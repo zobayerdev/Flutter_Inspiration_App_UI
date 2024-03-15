@@ -35,6 +35,35 @@ class _HomePageState extends State<HomePage> {
           onPressed: () {},
         ),
       ),
+      body: SafeArea(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Container(
+              width: double.infinity,
+              decoration: const BoxDecoration(
+                color: Colors.white,
+              ),
+              padding: EdgeInsets.all(20),
+              child: Column(
+                children: <Widget>[
+                  Text(
+                    'Find your',
+                    style: GoogleFonts.spaceGrotesk(
+                      textStyle: Theme.of(context).textTheme.displayLarge,
+                      fontSize: 25,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 5,
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
