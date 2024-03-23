@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_inspiration_ui/app_behavour.dart';
 import 'package:flutter_inspiration_ui/home.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:device_preview/device_preview.dart';
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(fontFamily: GoogleFonts.spaceGrotesk().fontFamily),
       title: 'Flutter Inspiration UI',
       debugShowCheckedModeBanner: false,
+      scrollBehavior: AppScrollBehavior(),
       home: const HomePage(),
     );
   }
